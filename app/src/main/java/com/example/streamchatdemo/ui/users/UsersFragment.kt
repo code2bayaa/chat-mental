@@ -211,7 +211,6 @@ class UsersFragment : Fragment() {
                     Toast.makeText(context, "Response not successful $response", Toast.LENGTH_SHORT)
                         .show()
                 }
-
             }
 
             @SuppressLint("SetTextI18n")
