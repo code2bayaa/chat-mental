@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mental.homePage"
+        android:background="@drawable/wallpaper"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wordTheme"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/mentalTheme"
+            android:background="@color/mentalBackground"
+            app:drawableEndCompat="@drawable/ic_mental_theme"
+            android:textStyle="bold"
+            android:id="@+id/textViewHome" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mentalBackground"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/mentalTheme"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/loginHome" />
+
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/signUp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/mentalTheme"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/signUpHome" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mentalBackground"
+            android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/first_home_TextView"
+            android:layout_width="160dp"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/mentalBackground"
+            android:text="@string/first"
+            android:textColor="@color/wordTheme"/>
+
+    <TextView
+            android:id="@+id/second_home_TextView"
+            android:layout_width="160dp"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:text="@string/second"
+            android:backgroundTint="@color/mentalBackground"
+            android:textColor="@color/black"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mentalBackground"
+            android:orientation="horizontal">
+
+    <TextView
+                android:id="@+id/third_home_TextView"
+                android:layout_width="160dp"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:text="@string/third"
+                android:backgroundTint="@color/mentalBackground"
+                android:textColor="@color/black"
+                />
+
+        <TextView
+                android:id="@+id/fourth_home_TextView"
+                android:layout_width="160dp"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:text="@string/fourth"
+                android:backgroundTint="@color/mentalBackground"
+                android:textColor="@color/black"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mentalBackground"
+            android:orientation="horizontal">
+
+
+        <TextView
+                    android:id="@+id/fifth_home_TextView"
+                    android:layout_width="300dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifth"
+                    android:backgroundTint="@color/mentalBackground"
+                    android:textColor="@color/black"
+                    />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/mentalBackground"
+            android:id="@+id/first_scroll_text">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/wordTheme"
+                android:id="@+id/first_text" />
+
+    </androidx.core.widget.NestedScrollView>
+    <androidx.core.widget.NestedScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/mentalBackground"
+            android:id="@+id/second_scroll_text"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/wordTheme"
+                android:id="@+id/second_text" />
+    </androidx.core.widget.NestedScrollView>
+    <androidx.core.widget.NestedScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/third_scroll_text"
+            android:background="@color/mentalBackground"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/wordTheme"
+                android:id="@+id/third_text" />
+    </androidx.core.widget.NestedScrollView>
+    <androidx.core.widget.NestedScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/fourth_scroll_text"
+            android:background="@color/mentalBackground"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wordTheme"
+                android:layout_margin="15dp"
+                android:id="@+id/fourth_text" />
+    </androidx.core.widget.NestedScrollView>
+    <androidx.core.widget.NestedScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/fifth_scroll_text"
+            android:background="@color/mentalBackground"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wordTheme"
+                android:layout_margin="15dp"
+                android:id="@+id/fifth_text" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

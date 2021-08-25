@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/wallpaper"
+        android:orientation="vertical"
+        tools:context="com.example.mental.doctor.patientCases"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mentalTheme"
+            android:textStyle="bold"
+            android:background="@color/mentalBackground"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="@string/cases" />
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".patientCases">
+
+    <ListView
+            android:id="@+id/patient_cases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/mentalBackground"
+            android:dividerHeight="10dp" />
+
+    </RelativeLayout>
+</LinearLayout>

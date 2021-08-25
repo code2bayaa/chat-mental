@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mental.patients.doctorList"
+        android:orientation = "vertical"
+        android:background="@drawable/wallpaper">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/mentalTheme"
+                android:textStyle="bold"
+                android:background="@color/mentalBackground"
+                android:textSize="25sp"
+                android:text="@string/md"
+                android:id = "@+id/doctor_lists"
+                tools:layout_editor_absoluteY="156dp"/>
+    <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            >
+
+        <ListView
+                android:id = "@+id/doctor_patients_list"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:divider = "@color/mentalBackground"
+                android:dividerHeight = "5dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+    </RelativeLayout>
+</LinearLayout>
