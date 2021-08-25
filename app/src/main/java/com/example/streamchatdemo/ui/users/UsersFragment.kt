@@ -119,7 +119,6 @@ class UsersFragment : Fragment() {
     private fun queryAllUsers() {
 
         val filters = Filters.and(
-            Filters.ne("group", avatar),
             Filters.ne("id", client.getCurrentUser()!!.id)
         )
 
